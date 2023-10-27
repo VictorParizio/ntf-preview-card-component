@@ -1,0 +1,122 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+}
+
+section{
+    height: 95vh;
+}
+
+section, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    color: hsl(0, 0%, 100%);
+    transition: 0.3s ease-in-out;
+}
+
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.ntf-card{
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    border-radius: 15px;
+    height: 550px;
+    width: 325px;
+    
+}
+
+.ntf-card .img-link{
+    position: relative;
+    display: flex;
+}
+
+.ntf-card .img-link::before,
+.ntf-card .img-link::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 8px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.ntf-card .img-link::before{
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 8px;
+}
+
+.ntf-card .img-link::after{
+    background: url(../images/icon-view.svg) no-repeat center;
+}
+
+.ntf-card .img-link:hover::before{
+    opacity: 0.3;
+}
+
+.ntf-card .img-link:hover::after{
+    opacity: 1;
+}
+
+.ntf-card .img-card{
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.ntf-card .title{
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ntf-card .title:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.ntf-card .descritivo{
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.ntf-card .info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ntf-card .container{
+    display: flex;
+    align-items: center;
+    gap: 7px
+}
+
+.ntf-card .container .eth{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.ntf-card hr{
+    color: hsl(215, 32%, 27%);
+}
+
+.ntf-card .avatar{
+    width: 30px;
+    border: solid 1px;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    margin-right: 10px;
+}
+
+.attribution, 
+.attribution a{
+    font-size: 12px;
+}
